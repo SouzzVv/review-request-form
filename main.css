@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+}
+::placeholder{
+    color: red;
+}
+h1, p, label {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.centro {
+    justify-content: center; 
+    align-items: center;     
+    padding: 0;       
+}
+.textarea-caderno{
+    display: block;
+    resize: none;
+    font-size: 15px;
+    line-height: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='25'%3E%3Crect x='0' y='24' width='100%25' height='1' fill='black'/%3E%3C/svg%3E");
+    background-size: 100% 25px;
+    background-repeat: repeat-y;
+    border: none;
+    caret-color: red;
+    padding-top: 2px;
+    overflow: hidden;padding-top: 2px;
+    padding-left: 5px; 
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.incio-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.logo {
+    width: 20%;
+    padding: 0px 30px;
+    border: 2px solid black;
+    border-right: none;
+    display: inline-block;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.title{
+    width: 60%;
+    border: 2px solid black;
+    border-right: none;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 24px;
+}
+.date{
+    display: flex;
+    width: 20%;
+    font-size: 16px;
+    border: 2px solid black;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.date label{
+    padding-left: 3px;
+}
+.input-date{
+    font-size: 16px;
+    font-size: 20px;
+    border: none;
+    height: 25px;
+    width: 200px;
+    caret-color: red;
+}
+.input-date:focus{
+    outline: none;
+}
+.meio-header {
+    display: flex;
+    width: 100%;
+    margin-top: 0; 
+    padding-right: 5px;
+    border: 2px solid black;
+    border-top: none;
+    display: flex;
+    width: 100%; 
+    justify-content: space-between; 
+    text-align: center;
+    white-space: nowrap;
+}
+input[type="radio"]{
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: none;
+    width: 13px;
+    height: 13px;
+    border: 2px solid black; 
+}
+input[type="radio"]:checked {
+    background-color: red;
+}
+.meio-header label {
+    padding-left: 3px;
+    margin: 0; 
+}
+.fim-header {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#coluna1, #coluna2 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column; 
+}
+#coluna2{   
+    justify-content: flex-start;
+}
+.fim-header label {
+    padding-left: 3px;
+    border: 2px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px; 
+}
+#p1{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+#p2{
+    border-right: none;
+    border-bottom: none;
+}
+#p3{
+    border-bottom: none;
+    border-right: none;
+}
+#p4{
+    border-top: none;
+}
+#p5{
+    border-top: none;
+}
+.input-Fheader{
+    font-size: 16px;
+    height: 25px;
+    width: 600px;
+    border: none;
+    background: transparent;
+    caret-color: red;
+}
+.input-Fheader:focus{
+    outline: none;
+}
+.alt{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    border: 2px solid black;
+    margin-top: none;
+}
+.bloco-linha{
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    padding-bottom: 25px;
+}
+.linha{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    padding-top: 30px; 
+    border-bottom: 2px solid black;
+}
+.textarea-caderno:focus{
+    outline: none;
+}
+#motivo{
+    height: 150px;
+    width: 100%;
+}
+#descrição{
+    height: 100px;
+    width: 100%;
+}
+.bloco-analise{
+    padding-left: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 250px;
+    border: 2px solid black;
+    justify-content: center;
+}
+#b1{
+    width: 15%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+#b2{
+    width: 15%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+#b3{
+    width: 15%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+#b4{
+    width: 15%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+#b5{
+    border-top: none;
+    width: 40%;
+    border-bottom: none;
+}
+.analise{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.input-analise{
+    font-size: 16px;
+    height: 25px;
+    width: 97%;
+    border: none;
+    background: transparent;
+    caret-color: red;
+}
+.radio-ok/nok{
+    height: 25px;
+}
+.input-analise:focus{
+    outline: none;
+}
+#nec-treinamento{
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+#treinamento{
+    height: 150px;
+    width: 100%;
+    margin-top: 5px;
+}
+.footer-inicio{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 25px;
+}
+#aprovado{
+    padding-left: 3px;
+    width: 85%;
+}
+#data{
+    padding-left: 3px;
+    justify-content: center;
+    width: 15%;
+    border-left: 2px solid black;
+}
+.input-footer{
+    width: 50%;
+    border: none;
+    font-size: 16px;
+    caret-color: red;
+}
+.input-footer:focus{
+    outline: none;
+}
+.footer-meio{
+    font-size: smaller;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#f1{
+    padding-left: 3px;
+}
+#f2{
+    padding-left: 3px;
+}
+.footer-fim{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.footer-fim button{
+    font-size: 16px;
+    padding: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: red;
+    color: black;
+    border: none;
+    cursor: pointer;
+}

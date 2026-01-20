@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>Form. Solicitação de Revisão</title>
+    </head>
+    <body>
+        
+        <header>
+            <div class="incio-header"> 
+                <div class="logo"> <img src="comil.jpg" alt="logo comil"></div>
+                <div class="title"><h1>SOLICITAÇÃO DE REVISÃO</h1></div>            
+                <div class="date"><label>SR N° <input type="text" class="input-date" placeholder="________"></label> <br> <label>DATA: <input type="text" class="input-date data-mask" placeholder="__/__/__" maxlength="10"></label></div>
+            </div>
+
+            <div class="meio-header">
+                    <label class="input-radio"><input type="radio" name="tipo_doc"> P.S.Q</label> 
+                    <label class="input-radio"><input type="radio" name="tipo_doc"> I.T</label> 
+                    <label class="input-radio"><input type="radio" name="tipo_doc"> FORMULÁRIO</label> 
+                    <label class="input-radio"><input type="radio" name="tipo_doc"> ESPECIFICAÇÃO</label> 
+                    <label class="input-radio"><input type="radio" name="tipo_doc"> OUTRO</label>
+            </div>
+            <div class="fim-header">
+                <div id="coluna1"><label id="p1">SOLICITADO POR: <input type="text" class="input-Fheader" placeholder="_____________________________"></label>  <label id="p2">CÓD. DO DOCTO: <input type="text" class="input-Fheader" placeholder="_____________________________"></label> <label id="p3">CÓDIGOS DO ITEM: <input type="text" class="input-Fheader" placeholder="_____________________________"></label> </div> <div id="coluna2"><label id="p4">SETOR: <input type="text" class="input-Fheader" placeholder="_____________________________"></label> <label id="p5">REVISÃO: <input type="text" class="input-Fheader" placeholder="_____________________________"></label></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="alt">MOTIVO DA ALTERAÇÃO</div>
+            <div class="bloco-linha">
+                <textarea class="textarea-caderno" id="motivo" placeholder="->"></textarea>
+            </div>
+            <div class="alt">DESCRIÇÃO DA ALTERAÇÃO</div>
+            <div class="bloco-linha">
+                <textarea class="textarea-caderno" id="descrição" placeholder="->"></textarea>
+            </div>
+            <div class="alt"> ANALISE CRITICA</div>
+            <div class="analise">
+                <div class="bloco-analise" id="b1">NOME/VISTO
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise"></div>
+                </div>
+                <div class="bloco-analise" id="b2">OK
+                    <div class="linha centro">
+                        <input type="radio" class="input-radio radio-ok/nok" name="a1" value="OK">
+                    </div>
+                    <div class="linha centro">
+                        <input type="radio" class="input-radio radio-ok/nok" name="a2" value="OK">
+                    </div>
+                    <div class="linha centro">
+                        <input type="radio" class="input-radio radio-ok/nok" name="a3" value="OK">
+                    </div>
+                    <div class="linha centro">
+                        <input type="radio" class="input-radio radio-ok/nok" name="a4" value="OK">
+                    </div>
+                </div>
+                <div class="bloco-analise" id="b3">ÑOK
+                    <div class="linha centro">
+                        <input type="radio" class="input-radio radio-ok/nok" name="a1" value="NOK">
+                    </div>
+                    <div class="linha centro">
+                        <input type="radio" class="input-radio radio-ok/nok" name="a2" value="NOK">
+                    </div>
+                    <div class="linha centro">
+                        <input type="radio" class="input-radio radio-ok/nok" name="a3" value="NOK">
+                    </div>
+                    <div class="linha centro">
+                        <input type="radio" class="input-radio radio-ok/nok" name="a4" value="NOK">
+                    </div>
+                </div>
+                <div class="bloco-analise" id="b4">DATA
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise data-mask" maxlength="10"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise data-mask" maxlength="10"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise data-mask" maxlength="10"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise data-mask" maxlength="10"></div>
+                </div>
+                <div class="bloco-analise" id="b5">CASO NÃO APROVE DESCREVA O MOTIVO
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise"></div>
+                    <div class="linha"><input type="text" placeholder="->" class="input-analise"></div>
+                </div>
+            </div>
+            <div class="alt" id="nec-treinamento">
+                <div>NECESSÁRIO TREINAMENTO? <label> SIM <input type="radio" class="input-radio" name="nec-treinamento"></label>   <label> NÃO <input type="radio" class="input-radio" name="nec-treinamento"> </label> </div>
+                <div>(SE SIM INFORME O NUMERO DO LNT) </div>
+            </div>
+            <textarea class="textarea-caderno" id="treinamento" placeholder="->"></textarea>
+        </main>
+    
+        <footer>
+            <div class="footer-inicio">
+                <label id="aprovado">APROVADO POR: <input type="text" class="input-footer" placeholder="_____________________________"></label> 
+                <label id="data">DATA:<input type="text" class="input-footer data-mask" placeholder="__/__/__" maxlength="10"></label>
+            </div>
+            <div class="footer-meio">
+                <p id="f1">Revisão do formulário: 05</p>
+                <p id="f2">F:\Documentos Comil - Itaquá\formulários\Qualidade\Solicitação de Revisão - FSGQ94.03.doc</p>
+            </div>
+            <div class="footer-fim">
+                <button onclick="gerarExcel()">SALVAR</button>
+            </div>
+        </footer>
+        <script src="code.js"></script>
+    </body>
+</html>
